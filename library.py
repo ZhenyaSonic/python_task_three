@@ -93,12 +93,8 @@ class Library:
         self._books.append(book)
 
     def search_by_title(self, title: str) -> Optional[Book]:
-        """
-        Поиск книги по точному названию.
+        """Поиск книги по точному названию."""
 
-        Returns:
-            Book или None если книга не найдена
-        """
         for book in self._books:
             if book.title.lower() == title.lower():
                 return book

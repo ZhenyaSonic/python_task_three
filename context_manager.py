@@ -2,6 +2,7 @@
 
 
 class FileManager:
+    """Менеджер контекста для безопасной работы с файлами."""
     def __init__(self, filename, mode):
         self.filename = filename
         self.mode = mode
